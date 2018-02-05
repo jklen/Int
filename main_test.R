@@ -169,7 +169,7 @@ CrossTable(train_xgb_labels, xgboost_train_class_predictions)
 xgboost_test_predictions <- predict(xgboost_model, data.matrix(df_test_xgb))
 xgboost_test_class_predictions <- as.numeric(xgboost_test_predictions > 0.2)
 mean(test_xgb_labels == xgboost_test_class_predictions)
-CrossTable(test_xgb_labels, xgboost_test_class_predictions)
+CrossTable(test_xgb_labels, xgboost_test_class_predictions) # h
 
 
 # neural network
